@@ -1,6 +1,6 @@
 from argparse import ArgumentParser
 
-from some_project.utils import double, triple, fib
+from some_project.utils import double, fib, triple
 
 
 def main():
