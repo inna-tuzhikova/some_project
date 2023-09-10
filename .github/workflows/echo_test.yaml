@@ -1,0 +1,28 @@
+name: Echo test workflow
+
+on:
+    pull_request:
+        branches:
+            - main
+    workflow_dispatch:
+
+jobs:
+    job_1:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Step 1
+              run: echo "Job 1. Step 1"
+              shell: bash
+            - name: Step 2
+              run: echo "Job 1. Step 2"
+              shell: bash
+    job_2:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Step 1
+              run: echo "Job 2. Step 1"
+              shell: bash
+            - name: Step 2
+              run: echo "Job 2. Step 2"
+              shell: bash
