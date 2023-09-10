@@ -1,4 +1,4 @@
-name: Testing Log analyzer
+name: Testing Some Project
 
 on:
     pull_request:
