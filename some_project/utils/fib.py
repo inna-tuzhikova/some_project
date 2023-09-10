@@ -6,4 +6,4 @@ def fib(n: int):
         )
     if n < 0:
         raise ValueError(f'`n` should be >= 0, got {n}')
-    return n if n <= 1 else fib(n-2) + fib(n-1)
+    return n if n <= 1 else fib(n - 2) + fib(n - 1)
